@@ -11,12 +11,12 @@ device = 0
 ed_epoch = 100
 refine_epoch = 100
 final_epoch = 100
-batch_size = 32 
+batch_size = 16 
 
 RF = RefineNet().double().cuda(device)
 ED = EncoderDecoder().double().cuda(device)
 
-opt_ED = optim.SGD(ED.parameters(), lr=5e-3, momentum=0.9)
+opt_ED = optim.SGD(ED.parameters(), lr=5e-2, momentum=0.9)
 opt_RF = optim.SGD(RF.parameters(), lr=5e-2, momentum=0.9)
 
 a_path = '/home/zhuyuanjin/data/Human_Matting/alpha'
