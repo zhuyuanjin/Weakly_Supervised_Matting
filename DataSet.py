@@ -33,7 +33,7 @@ class MattingDataSet(Dataset):
         img_patch = img_patch.transpose(2, 0, 1) / 255.0
         alpha_patch = alpha_patch[np.newaxis, :, :] / 255.0
         trimap_patch = trimap_patch[np.newaxis, :, :] / 255.0
-        seg_patch = np.array(alpha_patch > 0.1, dtype=np.int)
+        seg_patch = np.array(alpha_patch > 0.1, dtype=np.float)
         return {'img': img_patch,   'trimap': trimap_patch, 'alpha': alpha_patch, 'unknown':unknown, 'seg':seg_patch}
 
 
