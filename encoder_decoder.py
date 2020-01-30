@@ -88,7 +88,7 @@ class EncoderDecoder(nn.Module):
         self.deconv1 = nn.Conv2d(64, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
         self.deconvBN1 = nn.BatchNorm2d(64)
 
-        self.conv_final = nn.Conv2d(64, 1, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+        self.conv_final = nn.Conv2d(64, 2, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
 
         self.initialize()
 

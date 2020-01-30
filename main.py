@@ -22,7 +22,7 @@ opt_RF = optim.SGD(RF.parameters(), lr=5e-3, momentum=0.9)
 a_path = '/home/zhuyuanjin/data/Human_Matting/alpha'
 img_path = '/home/zhuyuanjin/data/Human_Matting/image'
 
-ed_pretrained = '/home/zhuyuanjin/data/Human_Matting/models/ed_pretrained_seg'
+ed_pretrained = '/home/zhuyuanjin/data/Human_Matting/models/ed_pretrained_ce'
 rf_pretrained = '/home/zhuyuanjin/data/Human_Matting/models/rf_pretrained'
 
 final_param = '/home/zhuyuanjin/data/Human_Matting/models/final_param'
@@ -47,13 +47,14 @@ if __name__ == '__main__':
             cnt += 1
             img, alpha, trimap, unknown, seg = batch['img'].cuda(device), \
                                               batch['alpha'].cuda(device), batch['trimap'].cuda(device), \
-                                              batch['unknown'].cuda(device), batch["seg"].cuda(device)
+                                              batch['unknown'].cuda(device), batch["seg"].cuda(device).long().squeeze()
 
             input = torch.cat((img, trimap), 1)
             seg_pred = ED(input)
+            loss_fn = nn.CrossEntropyLoss()
             #img_predict = (fg * alpha_predict + bg * (1-alpha_predict)) * unknown
             #loss_comp = F.mse_loss(img_predict * unknown, img * unknown)
-            loss_seg = F.binary_cross_entropy_with_logits(seg_pred, seg)
+            loss_seg = loss_fn(seg_pred, seg)
             loss = loss_seg
             print(loss.item(), flush=True)
             torch.save({'net':ED.state_dict(), 'optim':opt_ED.state_dict()}, ed_pretrained)
