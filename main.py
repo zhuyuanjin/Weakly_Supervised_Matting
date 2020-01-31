@@ -16,11 +16,12 @@ batch_size = 16
 RF = RefineNet().double().cuda(device)
 ED = EncoderDecoder().double().cuda(device)
 
-opt_ED = optim.SGD(ED.parameters(), lr=1e-3, momentum=0.9)
+opt_ED = optim.SGD(ED.parameters(), lr=1e-1, momentum=0.9)
 opt_RF = optim.SGD(RF.parameters(), lr=5e-3, momentum=0.9)
 
 a_path = '/home/zhuyuanjin/data/Human_Matting/alpha'
 img_path = '/home/zhuyuanjin/data/Human_Matting/image'
+name_file = "/home/zhuyuanjin/data/Human_Matting/SegSet.txt"
 
 ed_pretrained = '/home/zhuyuanjin/data/Human_Matting/models/ed_pretrained_seg'
 rf_pretrained = '/home/zhuyuanjin/data/Human_Matting/models/rf_pretrained'
@@ -28,10 +29,11 @@ rf_pretrained = '/home/zhuyuanjin/data/Human_Matting/models/rf_pretrained'
 final_param = '/home/zhuyuanjin/data/Human_Matting/models/final_param'
 
 
-dataset = MattingDataSet(a_path=a_path, img_path=img_path)
+dataset = MattingDataSet(a_path=a_path, img_path=img_path, name_file=name_file)
 dataloader = DataLoader(dataset, num_workers=10 , batch_size=batch_size, shuffle=True)
 
 if __name__ == '__main__':
+    print("The length of the DataSet is %d" % len(dataset))
 
     print('Beginning to PreTrain the Encoder Decoder')
     if os.path.exists(ed_pretrained):

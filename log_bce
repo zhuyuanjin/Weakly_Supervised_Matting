@@ -1,46 +1,88 @@
+The length of the DataSet is 20000
 Beginning to PreTrain the Encoder Decoder
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [96,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [97,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [98,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [99,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [102,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [103,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [104,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [110,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [114,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [117,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [119,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [121,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [123,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [32,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [34,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [38,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [44,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [45,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [50,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [52,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [55,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [58,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [59,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [61,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [63,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [7,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [9,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [10,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [14,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [16,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [17,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [20,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [23,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [24,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [25,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [26,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [28,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [29,0,0] Assertion `input >= 0. && input <= 1.` failed.
-/opt/conda/conda-bld/pytorch_1556653114079/work/aten/src/THCUNN/BCECriterion.cu:42: Acctype bce_functor<Dtype, Acctype>::operator()(Tuple) [with Tuple = thrust::detail::tuple_of_iterator_references<thrust::device_reference<double>, thrust::device_reference<double>, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type, thrust::null_type>, Dtype = double, Acctype = double]: block: [63,0,0], thread: [30,0,0] Assertion `input >= 0. && input <= 1.` failed.
-Traceback (most recent call last):
-  File "main.py", line 56, in <module>
-    loss_seg = F.binary_cross_entropy(seg_pred, seg)
-  File "/home/zhuyuanjin/anaconda3/lib/python3.7/site-packages/torch/nn/functional.py", line 2113, in binary_cross_entropy
-    input, target, weight, reduction_enum)
-RuntimeError: reduce failed to synchronize: device-side assert triggered
+loading param from /home/zhuyuanjin/data/Human_Matting/models/ed_pretrained_seg
+0.3156856942988653
+0.29014439869519154
+0.16400859606925505
+0.12449399410911063
+0.17515036983675303
+0.1429496993981896
+0.17567887642482316
+0.30535547041157546
+0.1430253003512499
+0.10204901618593923
+0.14968452151601358
+0.2714121392796624
+0.27162877632137855
+0.31001173451403913
+0.1020772852403343
+0.09582300546137082
+0.10203908427024395
+0.21737492216201443
+0.09753147278535833
+0.32759244316415714
+0.12097374350419408
+0.10782615426882794
+0.12203437765534839
+0.11983677308460088
+0.09232603553484948
+0.11690165485377887
+0.2311302966845298
+0.11146874679957842
+0.10307509414269041
+0.11073725693444009
+0.08480687322191048
+0.09308240575256964
+0.05356297669578203
+0.0927680308559681
+0.1153960600024539
+0.15217657766927986
+0.07054634863624948
+0.07793407701935622
+0.09323677974784488
+0.10184963496075404
+0.11761158462418018
+0.10479615464648383
+0.0764121358216842
+0.08195745113456684
+0.05465860062607869
+0.13867544156383285
+0.08315922610310213
+0.05762801063397517
+0.053962849950569027
+0.06992570279134211
+0.06931983996959123
+0.07231074387453071
+0.07961733922552672
+0.04376309426156633
+0.04868702964158727
+0.05621514606222755
+0.05721606087762506
+0.0511832839872691
+0.07082061490358188
+0.0857894153859399
+0.06854355948247526
+0.06237445020596304
+0.06201237629856139
+0.054906202963900884
+0.056588253592677634
+0.037208459288258944
+0.045682642552981954
+0.23481926344248352
+0.08679573452137189
+0.22447254853982368
+0.08212616463728657
+0.057596937652304454
+0.04802556056279817
+0.04547713597833526
+0.05832225512529323
+0.09768131163110574
+0.20561467744637668
+0.15901098942400638
+0.06007373027295807
+0.10850923820460606
+0.11574587877254752
+0.2786350085512428
+0.0784784231798536
+0.07104864830076603
+0.1924254605872083
