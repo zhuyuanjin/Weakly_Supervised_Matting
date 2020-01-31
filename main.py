@@ -7,11 +7,11 @@ import os
 from refinement import RefineNet
 from torch import nn
 
-device = 0 
+device = 1 
 ed_epoch = 100
 refine_epoch = 100
 final_epoch = 100
-batch_size = 16 
+batch_size = 32 
 
 RF = RefineNet().double().cuda(device)
 ED = EncoderDecoder().double().cuda(device)
