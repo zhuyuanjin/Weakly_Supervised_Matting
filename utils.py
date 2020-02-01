@@ -55,6 +55,7 @@ def random_sample(data, trimap, crop_size=(320, 320)):
             continue
         else:
             return loc
+        i += 1
     return (int(w/2), int(h/2))
 
 

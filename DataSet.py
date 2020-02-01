@@ -13,7 +13,7 @@ class MattingDataSet(Dataset):
     def __init__(self, img_path, a_path, name_file):
         self.img_path = img_path
         self.a_path = a_path
-        self.img_lst = open(name_file).readlines() 
+        self.img_lst = open(name_file).read().splitlines() 
 
     def __len__(self):
 
