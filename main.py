@@ -34,10 +34,10 @@ dataloader = DataLoader(dataset, num_workers=10 , batch_size=batch_size, shuffle
 if __name__ == '__main__':
     print("Train model with size of dataset %d" % len(dataset))
     print('Beginning to PreTrain the Encoder Decoder')
-    if os.path.exists(ed_pretrained):
-        print("loading param from %s" % ed_pretrained)
-        state_dict = torch.load(ed_pretrained)
-        ED.load_state_dict(state_dict['net'])
+#    if os.path.exists(ed_pretrained):
+#        print("loading param from %s" % ed_pretrained)
+#        state_dict = torch.load(ed_pretrained)
+#        ED.load_state_dict(state_dict['net'])
         #opt_ED.load_state_dict(state_dict['optim'])
     
     for epoch in range(ed_epoch):
