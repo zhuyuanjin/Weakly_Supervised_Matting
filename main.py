@@ -29,18 +29,18 @@ rf_pretrained = '/home/zhuyuanjin/data/Human_Matting/models/rf_pretrained'
 final_param = '/home/zhuyuanjin/data/Human_Matting/models/final_param'
 
 
-dataset = MattingDataSet(a_path=a_path, img_path=img_path, name_file=name_file)
+dataset = MattingDataSet(a_path=a_path, img_path=img_path, )
 dataloader = DataLoader(dataset, num_workers=10 , batch_size=batch_size, shuffle=True)
 
 if __name__ == '__main__':
     print("The length of the DataSet is %d" % len(dataset))
 
     print('Beginning to PreTrain the Encoder Decoder')
-    if os.path.exists(ed_pretrained):
-        print("loading param from %s" % ed_pretrained)
-        state_dict = torch.load(ed_pretrained)
-        ED.load_state_dict(state_dict['net'])
-        #opt_ED.load_state_dict(state_dict['optim'])
+#    if os.path.exists(ed_pretrained):
+#        print("loading param from %s" % ed_pretrained)
+#        state_dict = torch.load(ed_pretrained)
+#        ED.load_state_dict(state_dict['net'])
+#        #opt_ED.load_state_dict(state_dict['optim'])
     
     for epoch in range(ed_epoch):
         cnt = 0
