@@ -20,8 +20,7 @@ opt_ED = optim.SGD(ED.parameters(), lr=1e-5, momentum=0.9)
 opt_RF = optim.SGD(RF.parameters(), lr=5e-2, momentum=0.9)
 
 a_path = '/home/zhuyuanjin/data/Human_Matting/alpha'
-img_path = '/home/zhuyuanjin/data/Human_Matting/image'
-name_file='/home/zhuyuanjin/data/Human_Matting/MattingSet.txt'
+img_path = '/home/zhuyuanjin/data/Human_Matting/image_matting'
 
 ed_pretrained = '/home/zhuyuanjin/data/Human_Matting/models/ed_pretrained_Matting'
 rf_pretrained = '/home/zhuyuanjin/data/Human_Matting/models/rf_pretrained'
@@ -29,7 +28,7 @@ rf_pretrained = '/home/zhuyuanjin/data/Human_Matting/models/rf_pretrained'
 final_param = '/home/zhuyuanjin/data/Human_Matting/models/final_param'
 
 
-dataset = MattingDataSet(a_path=a_path, img_path=img_path, name_file=name_file)
+dataset = MattingDataSet(a_path=a_path, img_path=img_path, )
 dataloader = DataLoader(dataset, num_workers=10 , batch_size=batch_size, shuffle=True)
 
 if __name__ == '__main__':

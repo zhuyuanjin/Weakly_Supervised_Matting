@@ -10,10 +10,10 @@ from scipy import misc
 from PIL import Image
 
 class MattingDataSet(Dataset):
-    def __init__(self, img_path, a_path, name_file):
+    def __init__(self, img_path, a_path, ):
         self.img_path = img_path
         self.a_path = a_path
-        self.img_lst = open(name_file).read().splitlines() 
+        self.img_lst = os.lisrdir(self.img_path) 
 
     def __len__(self):
 
