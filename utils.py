@@ -42,7 +42,7 @@ def random_sample(data, trimap, crop_size=(320, 320)):
     unknown_loc = np.array(list(zip(*np.where(trimap == 128))))
     n_unkown = len(unknown_loc)
     i = 1
-    while i<100:
+    while i<10:
         index = np.random.randint(0, n_unkown)
         loc = unknown_loc[index]
         height, width = crop_size
@@ -52,10 +52,10 @@ def random_sample(data, trimap, crop_size=(320, 320)):
         left = int(x - width / 2)
         right = int(x + width / 2)
         if up < 0 or left < 0 or down > h or right > w:
+            i += 1
             continue
         else:
             return loc
-        i += 1
     return (int(w/2), int(h/2))
 
 
