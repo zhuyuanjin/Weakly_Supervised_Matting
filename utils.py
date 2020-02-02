@@ -7,7 +7,7 @@ from scipy import misc
 
 
 
-def data_crop(data, loc=(0, 0), crop_size=(320, 320)):
+def data_crop(data, loc=(0, 0), crop_size=(512, 512)):
     max_w, max_h = data.shape[0], data.shape[1]
     height, width = crop_size
     x, y = loc
@@ -34,31 +34,33 @@ def generate_trimap(alpha, kernel_size=(3,3)):
 
 
 
-def random_sample(data, trimap, crop_size=(320, 320)):
-    try:
-        w, h = data.shape[0], data.shape[1]
-    except:
-        print(type(data))
-    unknown_loc = np.array(list(zip(*np.where(trimap == 128))))
-    n_unkown = len(unknown_loc)
-    i = 1
-    while i<10:
-        index = np.random.randint(0, n_unkown)
-        loc = unknown_loc[index]
-        height, width = crop_size
-        x, y = loc
-        up = int(y - height / 2)
-        down = int(y + height / 2)
-        left = int(x - width / 2)
-        right = int(x + width / 2)
-        if up < 0 or left < 0 or down > h or right > w:
-            i += 1
-            continue
-        else:
-            return loc
-    return (int(w/2), int(h/2))
-
-
+def random_sample(data, trimap, crop_size=(512, 512)):
+#    try:
+#        w, h = data.shape[0], data.shape[1]
+#    except:
+#        print(type(data))
+#    unknown_loc = np.array(list(zip(*np.where(trimap == 128))))
+#    n_unkown = len(unknown_loc)
+#    i = 1
+#    while i<100:
+#        index = np.random.randint(0, n_unkown)
+#        loc = unknown_loc[index]
+#        height, width = crop_size
+#        x, y = loc
+#        up = int(y - height / 2)
+#        down = int(y + height / 2)
+#        left = int(x - width / 2)
+#        right = int(x + width / 2)
+#        if up < 0 or left < 0 or down > h or right > w:
+#            continue
+#        else:
+#            return loc
+#    return (int(w/2), int(h/2))
+    w, h = data.shape[0], data.shape[1]
+    height, width = crop_size
+    x = np.random.randint(height / 2 + 1, w - height / 2 - 1)
+    y = np.random.randint(width / 2 + 1, h - width / 2 - 1)
+    return (x, y)
 
 
 def composite4(fg, bg, a, w, h):
@@ -89,4 +91,3 @@ def composite4(fg, bg, a, w, h):
 
 def binary_unknown(trimap):
     return np.array(trimap == 128, dtype=np.float)
-
