@@ -1,5 +1,5 @@
 
-from network import EncoderDecoder
+from network import EncoderDecoder19
 import torch.nn.functional as F
 import torch.optim as optim
 from DataSet import *
@@ -9,9 +9,9 @@ from refinement import RefineNet
 
 device = 0 
 ed_epoch = 100
-batch_size = 16 
+batch_size = 10 
 
-ED = EncoderDecoder().double().cuda(device)
+ED = EncoderDecoder19().double().cuda(device)
 
 opt_ED = optim.SGD(ED.parameters(), lr=1e-5, momentum=0.9)
 
