@@ -59,13 +59,10 @@ class Deconv(nn.Module):
         super(Deconv, self).__init__()
         self.unpool = nn.MaxUnpool2d(2, stride=2)
         self.deconv = nn.Sequential(
-                                    nn.Conv2d(in_channels, out_channels, kernel_size=(1, 1), stride=(1, 1)),
-                                    nn.BatchNorm2d(out_channels)
-                                    nn.ReLU(inplace=True)
+                                    nn.Conv2d(in_channels, out_channels, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2)),
+                                    nn.BatchNorm2d(out_channels),
+                                    nn.ReLU(inplace=True),
 
-                                    nn.Conv2d(out_channels, out_channels, kernel_size=(1, 1), stride=(1, 1)),
-                                    nn.BatchNorm2d(out_channels)
-                                    nn.ReLU(inplace=True)
                                    )
 
     def forward(self, x, indices):
