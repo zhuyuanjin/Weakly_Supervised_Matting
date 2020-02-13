@@ -33,11 +33,11 @@ if __name__ == '__main__':
     if os.path.exists(paramE):
         print("loading param from %s" % paramE)
         state_dict = torch.load(paramE)
-        E.load_state_dict(state_dict['net'])
+        E.load_state_dict(state_dict)
     if os.path.exists(paramD):
         print("loading param from %s" % paramD)
         state_dict = torch.load(paramD)
-        D.load_state_dict(state_dict['net'])
+        D.load_state_dict(state_dict)
    
  
     for epoch in range(ed_epoch):
