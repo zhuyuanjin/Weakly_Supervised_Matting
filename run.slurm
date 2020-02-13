@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -o log_trimap+loss
+#SBATCH -o log_without_trimap
 #SBATCH --mem=60G
 #SBATCH -J loss+trimap            # 作业名为 test
 #SBATCH -p geforce                # 作业提交的分区为 cpu
