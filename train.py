@@ -50,7 +50,7 @@ if __name__ == '__main__':
                                           batch['unknown'].cuda(device)
 
             alpha_predict = D(E(image))
-            loss = F.smooth_l1_loss(alpha_predict * unknown, alpha * unknown)
+            loss = F.smooth_l1_loss(alpha_predict, alpha)
             print(loss.item(), flush=True)
             opt_E.zero_grad()
             opt_D.zero_grad()
