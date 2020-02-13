@@ -19,8 +19,8 @@ opt_D = optim.SGD(D.parameters(), lr=1e-3, momentum=0.9)
 a_path = '/home/zyj/data/Human_Matting/alpha'
 img_path = '/home/zyj/data/Human_Matting/image_mat'
 
-paramE = "/home/zyj/data/Human_Matting/models/paramE_baseline"
-paramD = "/home/zyj/data/Human_Matting/models/paramD_baseline"
+paramE = "/home/zyj/data/Human_Matting/models/paramE_trimap+loss"
+paramD = "/home/zyj/data/Human_Matting/models/paramD_trimap+loss"
 
 
 dataset = MattingDataSet(a_path=a_path, img_path=img_path, crop_size=crop_size)
@@ -49,8 +49,7 @@ if __name__ == '__main__':
                                           batch['alpha'].cuda(device), batch['trimap'].cuda(device), \
                                           batch['unknown'].cuda(device)
 
-            input = torch.cat((img, trimap), 1)
-            alpha_predict = D(E(input))
+            alpha_predict = D(E(image))
             loss = F.smooth_l1_loss(alpha_predict * unknown, alpha * unknown)
             print(loss.item(), flush=True)
             opt_E.zero_grad()

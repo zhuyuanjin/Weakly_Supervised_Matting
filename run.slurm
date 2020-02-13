@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH -o log_baseline
+#SBATCH -o log_trimap+loss
 #SBATCH --mem=60G
-#SBATCH -J Baseline               # 作业名为 test
+#SBATCH -J loss+trimap            # 作业名为 test
 #SBATCH -p geforce                # 作业提交的分区为 cpu
 #SBATCH -N 1                      # 作业申请 1 个节点
 #SBATCH --ntasks-per-node=2       # 单节点启动的进程数为 1

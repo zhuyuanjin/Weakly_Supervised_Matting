@@ -80,11 +80,7 @@ class Encoder(nn.Module):
     def __init__(self):
         super(Encoder, self).__init__()
         vgg11 = vgg11_bn(pretrained=True)
-        tmp = torch.zeros([64, 4, 3, 3])
-        tmp[:, 0:3, :, :] = vgg11.features[0].weight
         self.features = vgg11.features
-        self.features[0] = nn.Conv2d(4, 64, kernel_size=3, stride=1, padding = 1)
-        self.features[0].load_state_dict(OrderedDict([('weight', tmp), ('bias', vgg11.features[0].bias)]))
 
     def forward(self, x):
         x = self.features(x)
