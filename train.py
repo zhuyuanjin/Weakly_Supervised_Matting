@@ -19,8 +19,8 @@ opt_D = optim.SGD(D.parameters(), lr=1e-3, momentum=0.9)
 a_path = '/home/zyj/data/Human_Matting/alpha'
 img_path = '/home/zyj/data/Human_Matting/image_mat'
 
-paramE = "/home/zyj/data/Human_Matting/models/paramE_without_trimap"
-paramD = "/home/zyj/data/Human_Matting/models/paramD_without_trimap"
+paramE = "/home/zyj/data/Human_Matting/models/paramE_trimap+loss"
+paramD = "/home/zyj/data/Human_Matting/models/paramD_trimap+loss"
 
 
 dataset = MattingDataSet(a_path=a_path, img_path=img_path, crop_size=crop_size)
