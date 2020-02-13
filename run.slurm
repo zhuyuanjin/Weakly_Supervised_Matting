@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -o log
+#SBATCH -o log_baseline
 #SBATCH --mem=60G
 #SBATCH -J Baseline               # 作业名为 test
 #SBATCH -p geforce                # 作业提交的分区为 cpu
